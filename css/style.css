@@ -85,11 +85,11 @@ a {
 }
 
 #voyage .card-image {
-    background: url("/img/article/dodo.jpg") center center / cover no-repeat;
+    background: url("../img/article/dodo.jpg") center center / cover no-repeat;
 }
 
 #chauffard .card-image {
-    background: url("/img/article/maison.jpg") center center / cover no-repeat;
+    background: url("../img/article/maison.jpg") center center / cover no-repeat;
 }
 
 .card-text {
@@ -188,11 +188,11 @@ a {
 }
 
 .insta::before {
-    background: url("/img/logo/instagram.png") center center / contain no-repeat;
+    background: url("../img/logo/instagram.png") center center / contain no-repeat;
 }
 
 .snap::before {
-    background: url("/img/logo/snapchat.png") center center / contain no-repeat;
+    background: url("../img/logo/snapchat.png") center center / contain no-repeat;
 }
 
 .modal {

@@ -1,0 +1,286 @@
+:root {
+    --primary: #09459e;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-style: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.topbar {
+    padding: 20px;
+    background: var(--primary);
+    color: rgba(255, 255, 255, .7);
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+
+.topbar a {
+    margin: 0 20px;
+}
+
+.topbar a:hover, a.active {
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.site {
+    max-width: 900px;
+    width: 100%;
+}
+
+.card {
+    background: rgba(0, 0, 0, .05);
+    width: 500px;
+    margin: 50px auto;
+}
+
+.card-header {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+
+}
+
+.card-title {
+    font-family: cursive;
+    font-style: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.card-date {
+    margin-left: auto;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.card-image {
+    width: 100%;
+    height: 300px;
+}
+
+#voyage .card-image {
+    background: url("/img/article/dodo.jpg") center center / cover no-repeat;
+}
+
+#chauffard .card-image {
+    background: url("/img/article/maison.jpg") center center / cover no-repeat;
+}
+
+.card-text {
+    padding: 20px;
+    text-align: justify;
+}
+
+.page-title {
+    text-align: center;
+    font-weight: 700;
+    font-family: fantasy;
+    font-size: 30px;
+    margin: 0;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photos * {
+    margin: 20px;
+    transition: .3s;
+    height: 250px;
+    width: 250px;
+    background: url("https://via.placeholder.com/250x250") center center / cover no-repeat;
+}
+
+.photos *:hover {
+    transform: scale(1.1);
+}
+
+.profil {
+    display: flex;
+    background: rgba(0, 0, 0, .05);
+    margin: 50px auto;
+    width: 500px;
+    height: 300px;
+}
+
+.profil-photo img {
+    height: 300px;
+    width: auto;
+}
+
+.profil-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.profil-title {
+    margin: 0;
+    font-family: cursive;
+}
+
+.profil-adj {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.profil-main {
+    background: #ffffff;
+    flex: auto;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.profil-social {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profil-social a {
+    transition: .3s;
+    color: rgba(0, 0, 0, .5);
+}
+
+.profil-social a:hover {
+    text-decoration: underline;
+}
+
+.profil-social li::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+}
+
+.insta::before {
+    background: url("/img/logo/instagram.png") center center / contain no-repeat;
+}
+
+.snap::before {
+    background: url("/img/logo/snapchat.png") center center / contain no-repeat;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.modal-wrapper {
+    overflow: auto;
+    border-radius: 5px;
+    width: 600px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.blockquote {
+    background: rgba(0, 0, 0, .05);
+    padding: 30px;
+    position: relative;
+    margin: 80px 0;
+}
+
+.blockquote::before {
+    content: '〝';
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    font-size: 60px;
+}
+
+.blockquote::after {
+    content: '〞';
+    position: absolute;
+    bottom: -60px;
+    right: -30px;
+    font-size: 60px;
+}
+
+.quote {
+    display: flex;
+}
+
+.sentence::before {
+    content: '- ';
+}
+
+.person {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    font-style: italic;
+}
+
+.person:hover {
+    text-decoration: underline;
+}
+
+.video-title {
+    text-align: center;
+}
+
+.vlog {
+    margin: 50px auto;
+    display: block;
+}
+
+.footer {
+    padding: 30px;
+    background: rgba(0, 0, 0, .05);
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.gotop {
+    display: block;
+    margin-top: 20px;
+}
+
+.gotop:hover {
+    text-decoration: underline;
+}
